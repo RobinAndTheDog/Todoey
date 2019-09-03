@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774743CD231E991900562254 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774743CC231E991900562254 /* Item.swift */; };
 		779EB778231E59AF0025168C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779EB777231E59AF0025168C /* AppDelegate.swift */; };
 		779EB77A231E59AF0025168C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779EB779231E59AF0025168C /* SceneDelegate.swift */; };
 		779EB77C231E59AF0025168C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779EB77B231E59AF0025168C /* TodoListViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		774743CC231E991900562254 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		779EB774231E59AF0025168C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		779EB777231E59AF0025168C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779EB779231E59AF0025168C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774743CE231E992800562254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				774743CC231E991900562254 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		774743CF231E992F00562254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				779EB77B231E59AF0025168C /* TodoListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		774743D0231E994400562254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				779EB77D231E59AF0025168C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		774743D1231E995000562254 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				779EB785231E59B10025168C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		779EB76B231E59AF0025168C = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +92,12 @@
 			children = (
 				779EB777231E59AF0025168C /* AppDelegate.swift */,
 				779EB779231E59AF0025168C /* SceneDelegate.swift */,
-				779EB77B231E59AF0025168C /* TodoListViewController.swift */,
-				779EB77D231E59AF0025168C /* Main.storyboard */,
+				774743D1231E995000562254 /* Supporting Files */,
+				774743D0231E994400562254 /* View */,
+				774743CF231E992F00562254 /* Controller */,
+				774743CE231E992800562254 /* Model */,
 				779EB780231E59B10025168C /* Assets.xcassets */,
 				779EB782231E59B10025168C /* LaunchScreen.storyboard */,
-				779EB785231E59B10025168C /* Info.plist */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
@@ -139,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				779EB77C231E59AF0025168C /* TodoListViewController.swift in Sources */,
+				774743CD231E991900562254 /* Item.swift in Sources */,
 				779EB778231E59AF0025168C /* AppDelegate.swift in Sources */,
 				779EB77A231E59AF0025168C /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6BLA5KTZ8;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6BLA5KTZ8;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "Todoey/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
